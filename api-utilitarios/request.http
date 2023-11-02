@@ -1,0 +1,26 @@
+@server = http://localhost:3000
+
+### POST LOWERCASE
+
+POST {{server}}/util/text/lowercase
+Content-Type: application/json
+
+{
+    "input": "Lorem Ipsum"
+}
+
+### POST UPPERCASE
+
+POST {{server}}/util/text/uppercase
+Content-Type: application/json
+
+{
+    "input": "Lorem Ipsum"
+}
+
+### GET Maximum
+
+GET {{server}}/util/number/maximum/?input=10,1,100
+
+### GET Minimum
+GET {{server}}/util/number/minimum/?input=10,1,100
